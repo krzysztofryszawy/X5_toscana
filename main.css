@@ -1,0 +1,387 @@
+body {
+    color: #404040;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    min-width: 1000px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40vh 30vh minmax(30vh, max-content) 40vh;
+    grid-template-areas: 
+    "info     photo     photo     photo   photo" 
+    "privacy photo     photo     photo   photo" 
+    "privacy rev1     rev1   rev2     quiet"
+    "nature nature     nature nature quiet";
+}
+
+
+.element {
+    padding: 2em;
+}
+
+.photo {
+    grid-area: photo;
+    background-image: url(img/DSC_0299-3.JPG);
+    background-size:cover;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+    font-size: 3em;
+    transition: .5s ease-in-out;
+}
+
+.photo:hover {
+    opacity: .9;
+    color: black;
+}
+
+
+.info {
+    grid-area: info;
+    text-align: center;
+    padding: 2em;
+    background-color: ghostwhite;
+    color: #404040;
+    font-size: 1.2em;
+}
+.green-leaf {
+    transition: all .5s;
+    color:olivedrab;
+}
+
+.privacy {
+    display: flex;
+    grid-area: privacy;
+    background-image: url(img/DSC_0321-2.JPG);
+    background-size:cover;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #404040;
+    transition: .5s ease-in-out;
+}
+
+.privacy:hover {
+    opacity: .7;
+}
+
+.rev1 {
+    grid-area: rev1;
+    border-right: 1px dotted olivedrab;
+    color: #404040;
+    transition: .5s;
+}
+.rev1:hover {
+    background-color: steelblue;
+    opacity: .8;
+    color: ghostwhite;
+}
+
+.rev2 {
+  grid-area: rev2;
+    color: #404040;
+/*  background: lightsteelblue;*/
+    transition: .5s;
+}
+
+.rev2:hover {
+    background-color: steelblue;
+    opacity: .8;
+    color: ghostwhite;
+}
+
+.quiet {
+    grid-area: quiet;
+    background: lightsteelblue;
+    background-image: url(img/DSC_0480.JPG);
+    background-size:cover;
+    background-position:center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: ghostwhite;
+    transition: .5s ease-in-out;
+}
+
+.quiet:hover {
+    opacity: .7;
+}        
+        
+
+.nature {
+    grid-area: nature;
+    background: lightsteelblue;
+    background-image: url(img/DSC_0278.JPG);
+    background-size:cover;
+    background-position:center;
+    text-align:right;
+    font-size: 2em;
+    font-weight: bolder;
+    color: ghostwhite;
+    transition: .5s ease-in-out;
+}
+
+.nature:hover {
+    opacity: .7;
+}
+
+.page1 {
+    box-sizing: border-box;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: whitesmoke;
+    color: #404040;
+}
+
+/************** FLEX page1 START *********************/
+.flex-container1 {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-item1 {
+    display: flex;
+    transition: all ease .4s;
+/*    border: 1px solid black;*/
+    flex-grow: 1;
+    flex-basis: 40vw;
+    background-size:cover;
+    background-position:center;
+    align-items: center;
+/*    padding: 1em;*/
+    margin: 0em;
+/*    box-shadow: 0px -2px 15px 1px rgba(0,0,0,0.3);*/
+    text-align: center;
+    padding: 2em;
+}
+
+
+    
+    
+.panel3 {
+/*    background-color: palevioletred;*/
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    flex-flow: column;
+}
+
+.panel4 {
+/*    background-color: aquamarine;*/
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    flex-flow: column;
+}
+
+.panel5 {
+/*    background-color: darkseagreen;*/
+    border-right: 1px solid gainsboro;
+    display: flex;
+    flex-flow: column;
+}
+
+.panel6 {
+    display: flex;
+    flex-flow: column;
+/*    background-color: yellowgreen;*/
+}
+
+/********************* FLEX page1 END **********************/
+
+
+
+
+
+
+
+.page2 {
+    box-sizing: border-box;
+    margin: 0;
+/*    background-color: gainsboro;*/
+    padding: 0;
+}
+
+
+
+/************** FLEX page2 START *********************/
+.flex-container2 {
+    height: 50vw;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-item2 {
+    transition: all ease-in-out .3s;
+/*    border: 10px solid white;*/
+    flex-grow: 0.2;
+    flex-basis: 20vw;
+    background-size:cover;
+    background-position:center;
+    align-items: center;
+/*    margin: 1em;*/
+    box-shadow: 0px -2px 15px 1px rgba(0,0,0,0.3);
+}
+
+
+.flex-item2:hover {
+    flex-grow: 1;
+}
+    
+.panel1 {
+    background-image: url(img/gallery/DSC_0913.JPG);
+}
+
+.panel2 {
+    background-image: url(img/gallery/DSC_0962.JPG);
+}
+/********************* FLEX page2 END **********************/
+
+
+
+
+
+
+
+.page3 {
+    box-sizing: border-box;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: whitesmoke;
+    color: #404040;
+}
+/************** FLEX page2 START *********************/
+.flex-container3 {
+    height: 50vw;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0;
+    
+}
+
+.flex-item3 {
+    transition: all ease-in-out .5s;
+    border: 1px solid white;
+    flex-grow: 0;
+    flex-basis: 15vw;
+    background-size:cover;
+    background-position:center;
+    align-items: center;
+}
+
+
+.flex-item3:hover {
+    flex-grow: 10;
+}
+    
+.panel7 {
+    background-image: url(img/gallery/DSC_0579.JPG);
+}
+.panel8 {
+    background-image: url(img/gallery/DSC_0322.JPG);
+}
+.panel9 {
+    background-image: url(img/gallery/DSC_0736.JPG);
+}
+.panel10 {
+    background-image: url(img/gallery/DSC_0580.JPG);
+}
+/********************* FLEX page2 END **********************/
+
+
+
+
+
+
+
+
+.page4 {
+    box-sizing: border-box;
+    margin-top: 3em;
+    background-color: gainsboro;
+    color: #404040;
+    
+}
+
+/************** FLEX page4 START *********************/
+.flex-container4 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.flex-item4 {
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    padding: 2em;
+    flex-grow: 1;
+    
+}
+
+.flex-item5 {
+    flex-grow: 1;
+    flex-flow: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    align-items: stretch;
+    display: flex;
+    
+}
+/********************* FLEX page4 END **********************/
+
+
+.flex-item4:hover {
+    background-color: lightgray;
+    color: black;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    color: #404040;
+    text-align: center;
+    padding: .5em;
+    font-size: .5em;
+}
